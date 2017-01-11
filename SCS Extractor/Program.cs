@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -12,9 +12,9 @@ namespace SCS_Extractor
             string binary = "\""+AppDomain.CurrentDomain.BaseDirectory + "scs_extractor.exe\"";
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.InitialDirectory = "c:\\program files (x86)";
-            openFileDialog1.Filter = "SCS Archive (*.SCS)|*.SCS|All files (*.*)|*.*";
+            openFileDialog1.Filter = "SCS Archive(s) (*.SCS)|*.SCS|All files (*.*)|*.*";
             openFileDialog1.Multiselect = true;
-            openFileDialog1.Title = "Select SCS Archives";
+            openFileDialog1.Title = "Select SCS Archive(s) to extract...";
             DialogResult dr = openFileDialog1.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)
             {
